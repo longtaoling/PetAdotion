@@ -1,0 +1,49 @@
+
+    <userTopBar *ngIf = "type === 'User'" [username]=username [type]=type></userTopBar>
+    <admin-top-bar *ngIf = "type === 'Admin'" [username]=username [type]=type></admin-top-bar>
+<div class="contain" *ngFor="let result of search_temp1; let i = index">
+        <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <div class="card-header">ID: {{result.id}}</div>
+            <div class="card-body">
+                <h4 class="card-title">{{result.name}}</h4>
+                <a href="details/{{i}}/{{test_type}}/{{test_page}}/{{token}}/{{type}}/{{username}}" class="card-text"
+                    (click)="clicktodo(i)">{{result.breeds.primary}}<br><br><span
+                        class="card-text">{{result.description}}</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pagebar">
+        <ul class="pagination">
+            <li class="page-item active">
+                <button class="page-link" (click)="changepage('1')">1</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('2')">2</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('3')">3</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('4')">4</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('5')">5</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('6')">6</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('7')">7</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('8')">8</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('9')">9</button>
+            </li>
+            <li class="page-item">
+                <button class="page-link" (click)="changepage('10')">10</button>
+            </li>
+        </ul>
+    </div>     

@@ -1,0 +1,31 @@
+
+    <div class="cute">Cute Pet</div>
+<ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper"><img [src]="images[0]" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h2>Pet is all of Love</h2>
+            <p>Let's Play Again, Adopt them.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]" alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>To Be pet Friend, Adopt Pet.</h3>
+            <p>Adopt whenever you can</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="Random third slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Adoption is a loving Option</h3>
+            <p>Because the abandoned pets need a home</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    

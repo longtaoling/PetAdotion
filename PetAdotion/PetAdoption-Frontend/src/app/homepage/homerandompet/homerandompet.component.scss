@@ -1,0 +1,19 @@
+
+.cute{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 70pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(230, 128, 99);
+}
+.image{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+}
+img{
+    padding:10px;
+    
+}

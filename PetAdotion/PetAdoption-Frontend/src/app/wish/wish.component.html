@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<!-- <script>
+    var global = global || window;
+  </script> -->
+</head>
+<body>
+
+    <userTopBar *ngIf = "type === 'User'" [username]=username [type]=type></userTopBar>
+    <admin-top-bar *ngIf = "type === 'Admin'" [username]=username [type]=type></admin-top-bar>
+    
+<!-- dfdfsdsf -->
+
+
+<div class="pet">Pet Adoption Wish List</div>
+<div class="backimage" [ngStyle]="{background: 'url(assets/img/wish.jpg)'}">
+<div class="wishform">
+  <form action="" method="" class="applyform">
+    <div class="formcontent">
+    <h2>Enter your wish pet</h2>
+    <p class="content1">We will contact you as soon as we have same type of animal needs adopt!</p>
+    Pet category: 
+    <select [(ngModel)] = "Category" name="Category">
+      <option value="Cat">Cat</option>
+      <option value="Dog">Dog</option>
+      <option value="Other">Other</option>
+    </select>
+    
+    <br>
+ 
+    Breed: <input type="text" [(ngModel)]= "Breed" name="Breed"><br>
+    Color: <input type="text" [(ngModel)] = "Color" name="Color"><br>
+    Gendar: 
+    
+    <select [(ngModel)] = "Gendar" name="Gendar">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+    </select><br>
+    Age: 
+    <!-- <input type="text" [(ngModel)] = "Age" name="Age"> -->
+  
+    <select [(ngModel)]="Age" name="Age">
+      <option value="Puppy">Puppy</option>
+      <option value="Young">Young</option>
+      <option value="Old">Old</option>
+    </select>
+    <br> 
+    <p>Special Requirement:</p>
+    <textarea [(ngModel)] = "SpecialR" name="SpecialR">
+
+    </textarea>
+    <br>
+    
+    
+    <button type="button" class="btn btn-success" (click) = "createwish()">Submit your wish list</button>
+
+  </div>
+  </form>
+</div>
+</div>
+</body>
+
+
+
+</html>
+

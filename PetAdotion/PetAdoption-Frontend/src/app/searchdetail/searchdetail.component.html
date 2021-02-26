@@ -1,0 +1,24 @@
+
+    <userTopBar *ngIf = "type === 'User'" [username]=username [type]=type></userTopBar>
+    <admin-top-bar *ngIf = "type === 'Admin'" [username]=username [type]=type></admin-top-bar>
+<div class="detail">
+<div class="jumbotron">
+    <!-- <img class="photo" src={{search_temp1[id].photos.large}}> -->
+    <!-- <div class="card bg-light mb-3" style="max-width: 20rem;"> -->
+            <div class="card-header">{{search_temp1[id].id}}</div>
+            <div class="card-body">
+              <h4 class="card-text">{{search_temp1[id].name}}</h4>
+              <p class="card-text">{{search_temp1[id].breeds.primary}}</p>
+              <p class="card-text">{{search_temp1[id].age}}  {{search_temp1[id].gender}}  {{search_temp1[id].size}}</p>
+              <p class="card-text">{{search_temp1[id].status}}</p>
+              <p class="card-text">{{search_temp1[id].published_at}}</p>
+              <p class="card-text">{{search_temp1[id].contact.email}}</p>
+              <p class="card-text">{{search_temp1[id].contact.phone}}</p>
+            </div>
+            <a class="btn btn-secondary my-2 my-sm-0" href="apply/:type/:username/:i">Adoption Now</a>
+          <!-- </div> -->
+<!-- <div class="display">{{id}}</div> -->
+<!-- <div class="display">{{test_type}}</div>
+<div class="display">{{test_page}}</div> -->
+</div>
+</div>

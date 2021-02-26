@@ -1,0 +1,244 @@
+<html>
+    <head>
+             
+    </head>
+    <body>
+    <!-- <userTopBar *ngIf = "type === 'User'" [username]=username [type]=type></userTopBar> -->
+    <div class="hahah">
+    <div class="whole">
+        <div class="title">
+    <h2>Your holiday gift to the animals saves lives</h2>
+
+        <p>Your contribution to Best Friends goes straight to work helping tens of thousands of animals—both at the Sanctuary and through outreach and rescue programs all across the country. 
+    With a gift of $25 or more, you’ll receive six bimonthly issues of Best Friends magazine.
+        </p>
+        <p>To make your gift in honor of a loved one, please give a tribute gift here.</p>
+    </div>
+<hr>
+<div class="donate">
+<h2>Your donation to Best Friends</h2>
+<p>All donations are tax deductible</p>
+    <div class="radio-toolbar">
+        <input type="radio" class="amount" id="fifty" name="radioFruit" value=50 checked [(ngModel)] = "finalAmount">
+        <label for="fifty">$50</label>
+
+        <input type="radio" class="amount" id="hundred" name="radioFruit" value=100 [(ngModel)] = "finalAmount">
+        <label for="hundred">$100</label>
+
+        <input type="radio" class="amount" id="hundredfifty" name="radioFruit" value=150 [(ngModel)] = "finalAmount">
+        <label for="hundredfifty">$150</label> 
+
+        <input type="radio" class="amount" id="twohundred" name="radioFruit" value=200 [(ngModel)] = "finalAmount">
+        <label for="twohundred">$200</label> 
+    </div>
+</div>
+
+<hr>
+<div class="postal">
+<form>
+
+        <div class="form-group"> <!-- Full Name -->
+            <label for="full_name_id" class="control-label">Full Name</label>
+            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="John Deer">
+        </div>	
+    
+        <div class="form-group"> <!-- Street 1 -->
+            <label for="street1_id" class="control-label">Street Address 1</label>
+            <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
+        </div>					
+                                
+        <div class="form-group"> <!-- Street 2 -->
+            <label for="street2_id" class="control-label">Street Address 2</label>
+            <input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
+        </div>	
+    
+        <div class="form-group"> <!-- City-->
+            <label for="city_id" class="control-label">City</label>
+            <input type="text" class="form-control" id="city_id" name="city" placeholder="Smallville">
+        </div>									
+                                
+        <div class="form-group"> <!-- State Button -->
+            <label for="state_id" class="control-label">State</label>
+            <select class="form-control" id="state_id">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>					
+        </div>
+        
+        <div class="form-group"> <!-- Zip Code-->
+            <label for="zip_id" class="control-label">Zip Code</label>
+            <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+        </div>		
+        
+        <div class="form-group"> <!-- Submit Button -->
+            <!-- <button type="submit" class="btn btn-primary">Buy!</button> -->
+        </div>     
+        
+    </form>	
+</div>		
+    <hr>
+    <!-- chekcout panel -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="paymentCont">
+                            <div class="headingWrap">
+                                    <h3 class="headingTop text-center">Select Your Payment Method</h3>	
+                                    <p class="text-center">Created with bootsrap button and using radio button</p>
+                            </div>
+                            <div class="paymentWrap">
+                                <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+                                    <label class="btn paymentMethod active">
+                                        <div class="method visa"></div>
+                                        <input type="radio" name="options" checked> 
+                                    </label>
+                                    <label class="btn paymentMethod">
+                                        <div class="method master-card"></div>
+                                        <input type="radio" name="options"> 
+                                    </label>
+                                    <label class="btn paymentMethod">
+                                        <div class="method amex"></div>
+                                        <input type="radio" name="options">
+                                    </label>
+                                     <label class="btn paymentMethod">
+                                         <div class="method vishwa"></div>
+                                        <input type="radio" name="options"> 
+                                    </label>
+                                    <label class="btn paymentMethod">
+                                        <div class="method ez-cash"></div>
+                                        <div id="paypal-checkout-btn"></div>
+                                    </label>
+                                 
+                                </div>        
+                            </div>
+                            <div class="footerNavWrap clearfix">
+                                
+                            </div>
+                        </div>
+            
+        </div>
+    </div>
+
+
+    <!-- chekcout panel -->
+
+
+
+    <hr>
+
+    <!-- card information -->
+    <div class=cardinfo>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Payment Details
+                        </h3>
+                        <div class="checkbox pull-right">
+                            <label>
+                                <input type="checkbox" />
+                                Remember
+                            </label>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                        <div class="form-group">
+                            <label for="cardNumber">
+                                CARD NUMBER</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                    required autofocus />
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="expityMonth">
+                                        EXPIRY DATE</label>
+                                    <div class="col-xs-6 col-lg-6 pl-ziro">
+                                        <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                    </div>
+                                    <div class="col-xs-6 col-lg-6 pl-ziro">
+                                        <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cvCode">
+                                        CV CODE</label>
+                                    <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <br/>
+                <a href="/payend/User/{{username}}" class="btn btn-success btn-lg btn-block" role="button" >Pay</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-- card information -->
+    </div> 
+</div>             
+</body>
+
+</html>
+

@@ -1,0 +1,31 @@
+.img_input{
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.inputinfo{
+    width: 250px;
+    height: 45px;
+}
+.input{
+    text-align: center;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    width: 600px;
+    grid-column-gap: 30px;
+}
+.check{
+    font-size: 5pt;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.btn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.btn-outline-warning{
+    margin-right: 20px;
+}

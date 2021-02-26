@@ -1,0 +1,8 @@
+<userTopBar *ngIf = "type === 'User'" [username]=username [type]=type></userTopBar>
+<admin-top-bar *ngIf = "type === 'Admin'" [username]=username [type]=type></admin-top-bar>
+
+<app-homepageimg></app-homepageimg>
+<app-homerandompet></app-homerandompet>
+<app-aboutus [username]=username [type]=type></app-aboutus>
+
+<!-- <router-outlet></router-outlet> -->
