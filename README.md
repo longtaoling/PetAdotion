@@ -1,8 +1,7 @@
-# Final Project Topic
+# Project Topic
+#PetAdotion system
 
-Team 404 Not Found
-
-#####  1. Minimum required functionality
+#####  functionality
 
 1. Admin:
    + It enables administrators to register and login and manage system.( *Such as create, update, delete pet’s information*).
